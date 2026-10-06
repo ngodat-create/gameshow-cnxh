@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đường lên đỉnh Olympia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MÀN HÌNH CHÍNH -->
+    <div class="game">
+
+        <!-- TIÊU ĐỀ -->
+        <header>
+            <h1>ĐƯỜNG LÊN ĐỈNH OLYMPIA</h1>
+
+            <p>CHỦ NGHĨA XÃ HỘI KHOA HỌC</p>
+        </header>
+
+
+        <!-- SỐ CÂU -->
+        <div class="question-number">
+            CÂU HỎI <span id="question-number">01</span>
+        </div>
+
+
+        <!-- VÒNG TRÒN TRUNG TÂM -->
+        <div class="circle">
+            <span id="circle-number">01</span>
+        </div>
+
+
+        <!-- CÂU HỎI -->
+        <div class="question-box">
+
+            <h2 id="question">
+                Nội dung câu hỏi sẽ xuất hiện ở đây
+            </h2>
+
+        </div>
+
+
+        <!-- 4 ĐÁP ÁN -->
+        <div class="answers">
+
+            <button class="answer" onclick="chooseAnswer(0)">
+                <span>A</span>
+                <p id="answer-a">Đáp án A</p>
+            </button>
+
+
+            <button class="answer" onclick="chooseAnswer(1)">
+                <span>B</span>
+                <p id="answer-b">Đáp án B</p>
+            </button>
+
+
+            <button class="answer" onclick="chooseAnswer(2)">
+                <span>C</span>
+                <p id="answer-c">Đáp án C</p>
+            </button>
+
+
+            <button class="answer" onclick="chooseAnswer(3)">
+                <span>D</span>
+                <p id="answer-d">Đáp án D</p>
+            </button>
+
+        </div>
+
+
+        <!-- THÔNG BÁO ĐÚNG / SAI -->
+        <div id="result"></div>
+
+
+        <!-- NÚT CÂU TIẾP -->
+        <button
+            id="next-button"
+            class="next-button"
+            onclick="nextQuestion()">
+
+            CÂU TIẾP THEO →
+
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
